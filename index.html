@@ -19,11 +19,12 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Welcome</h1>
-						<h2>I am
-						Raghuram BB</h2>
-						<p>An Aerospace undergrad student specializing in Computational Engineering at <b>Indian Institute of Technology Madras(IITM)</b></p>
-						<p>Working on both high performance simulation and high speed flow experiments, as I believe simulation and experiments must go hand in hand for ultimate development</p>
+						<h2>Welcome to Research Portfolio website, I am Raghuram BB</h2>
+						<ul>
+						<li>An Aerospace undergrad student specializing in Computational Engineering at <b>Indian Institute of Technology Madras(IITM), India</b></li>
+						<li>Working on both high performance simulation and high speed flow experiments, and I believe simulations and experiments must go hand in hand for ultimate design development</li>
+						<li>Interested to work on Machine learning applications in Fluid dynamics, high performance CFD simulation and experimental high speed flows </li>
+						</ul>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -62,47 +63,64 @@
 								<ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li> -->
 								<!-- </ul> -->
+								<style>
+									video::-webkit-media-controls {
+										display: none !important;
+									}
+									</style>
                                 <body>
 									<h3>Experimental Shock Boundary Layer Interactions</h3>
-									<p>Span effects on Unsteadiness in Swept-Compression-Ramp Shock Boundary Layer Interactions. Three dimensional Shock Boundary layer interaction is observed with following experimental methods: Oil flow visualization(Below), Schlieren, Focusing Schlieren, Side-wall schlieren and pressure measurements
+									<p>Span effects on Unsteadiness in Swept-Compression-Ramp Shock Boundary Layer Interactions. Three dimensional Shock Boundary layer interaction is observed with following experimental methods: Oil flow visualization(Below), Schlieren, Focusing Schlieren, Side-wall schlieren and pressure measurements.
 										Schlieren snapshots are processed using Proper Orthogonal Decomposition(POD), Dynamic Mode Decomposition(DMD) and Spectral Proper Orthogonal Decomposition(SPOD) to analyze and obtain spatio-temporal dominant flow features and frequencies.
 									</p>
+									<p><b>Guide:</b><a href="https://iitm.irins.org/profile/67239" >Prof.Sriram Rengarajan</a>,IITM</p>
+									<p><b>Current status</b>: Writing a conference paper for "National Shock Wave Symposium", IIT Kanpur,India, Nov 2024</p>
 									<video width="640" height="360" controls autoplay loop muted>
 										<source src="images/oil_flow_muted.mp4" type="video/mp4">
 									
 									</video>
-									<div class="caption"><b> Oil flow visualization at Mach 3.0</b></div>
+									<div class="caption"><b> Oil flow visualization at Mach 3.0(video)</b></div>
 								</body>
 							</article>
-
+                                
 						<!-- Posts -->
-							<section class="posts">
-								<article>
+							<!-- <section class="post featured"> -->
+								
+								<article class="post featured">
+									<header>
+										<!--<span class="date">April 22, 2017</span>-->
+										<h3><a href="#">OPENMP offloading to GPU</a></h3>
+										<img src="images/mp_vs_acc.png" alt="Example" width="300" height="auto">
+									</header>
+									<!-- <a href="#" class="image fit"><img src="images/mp_vs_acc.png" alt="" /></a> -->
+									<p>Translated in-house CFD solver from OpenACC to OpenMP offloading and compared their performance using real test cases. This is done to ensure compatability of our solver across various GPU cards and compilers.
+										Colloborating with CDAC(Centre for development of Advanced Computing) to test our solver with different GPU architectures </p>
+										<p><b>Guide:</b><a href="https://home.iitm.ac.in/nrv/index.html" >Prof.Nagabhushana Rao Vadhlamani</a>,IITM</p>
+										<p><b>Current status:</b> After testing with AMD and intel GPUs, results will be published </p>
+									<!-- <a href="#" class="image fit"><img src="images/mp_acc_result.png" alt="" /></a> -->
+									<div class="image-container">
+							
+										<img src="images/mp_acc_result.png" alt="Example" width="300" height="auto">
+										<div class="caption"><b> Results with NVIDIA V100 GPU card</b></div>
+										<!-- <a href="#" class="responsive-image"><img src="images/mp_acc_result.png" alt="" /></a> -->
+									 </div>
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article class="post featured">
 									<header>
 										<!-- <span class="date"></span> -->
 										<h3><a href="#">Avishkar Hyperloop</a></h3>
 									</header>
-									<a href="#" class="image fit"><img src="images/avishkar.jpg" alt="" /></a>
-									<p>Student-run team researching and developing hyperloop technology.I worked as Thermal Engineer where I researched on Phase Change Materials(PCM) as a viable technique to cool critical electronic components and batteries</p>
+									<img src="images/avishkar.jpg" alt="Example" width="300" height="auto">
+									<p>Student-run team researching and developing hyperloop technology. I worked as Thermal Engineer where I researched on <b>Phase Change Materials(PCM)</b> as a viable technique to cool critical electronic components and batteries</p>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
+									
 								</article>
-								<article>
-									<header>
-										<!--<span class="date">April 22, 2017</span>-->
-										<h3><a href="#">OPENMP offloading to GPU</a></h3>
-
-									</header>
-									<a href="#" class="image fit"><img src="images/mp_vs_acc.png" alt="" /></a>
-									<p>Translated in-house CFD from OpenACC to OpenMP offloading and compared their performance using real test cases. This is done to ensure compatability of our solver across various GPU cards and compilers.
-										Colloborating with CDAC(Centre for development of Advanced Computing) to test our solver with different GPU architectures </p>
-									<a href="#" class="image fit"><img src="images/mp_acc_result.png" alt="" /></a>
-									<div class="caption"><b> Results with NVIDIA V100 GPU card</b></div>
-									<ul class="actions special">
-										<!-- <li><a href="#" class="button">Full Story</a></li> -->
-									</ul>
-								</article>
+								
 								<!-- <article>
 									<header>
 										<span class="date">April 18, 2017</span>
