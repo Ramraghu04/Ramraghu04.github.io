@@ -12,23 +12,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<style>
+		.special-paragraph {
+			font-family: "Garamond", serif;
+			font-size: 18px;
+			font-weight: 300;
+			text-align: justify;
+		}
+	</style>
+	<div id="intro">
+    <p class="special-paragraph">
+        <h2>Welcome to my Research Portfolio website, I am Raghuram BB</h2>
+    </p>
+    <p class="special-paragraph">
+        <ul>
+            An Aerospace undergrad student specializing in Computational Engineering at <b>Indian Institute of Technology Madras(IITM), India.</b>
+            I am working on both high performance simulation and high speed flow experiments, as I believe simulations and experiments must go hand in hand for ultimate design development.
+            I am very interested to work on Machine learning applications in Fluid dynamics, high performance CFD simulation and experimental high speed flows.
+        </ul>
+    </p>
+    <ul class="actions">
+        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
+</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h2>Welcome to Research Portfolio website, I am Raghuram BB</h2>
-						<ul>
-						<li>An Aerospace undergrad student specializing in Computational Engineering at <b>Indian Institute of Technology Madras(IITM), India</b></li>
-						<li>Working on both high performance simulation and high speed flow experiments, and I believe simulations and experiments must go hand in hand for ultimate design development</li>
-						<li>Interested to work on Machine learning applications in Fluid dynamics, high performance CFD simulation and experimental high speed flows </li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
 
 				<!-- Header -->
 					<header id="header">
@@ -38,8 +45,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">My projects</a></li>
+							<li class="active"><a href="index.html">Research projects</a></li>
+							<li><a href="elements.html">Course Projects</a></li>
 							<li><a href="generic.html">My interests</a></li>
+						
 							<!-- <li><a href="generic.html">My Skills</a></li> -->
 							<!-- <li><a href="elements.html">My blog</a></li> -->
 						</ul>
@@ -69,17 +78,32 @@
 									}
 									</style>
                                 <body>
-									<h3>Experimental Shock Boundary Layer Interactions</h3>
-									<p>Span effects on Unsteadiness in Swept-Compression-Ramp Shock Boundary Layer Interactions. Three dimensional Shock Boundary layer interaction is observed with following experimental methods: Oil flow visualization(Below), Schlieren, Focusing Schlieren, Side-wall schlieren and pressure measurements.
+									<h3 >Experimental Shock Boundary Layer Interactions</h3>
+									<p class="special-paragraph">Span effects on Unsteadiness in Swept-Compression-Ramp Shock Boundary Layer Interactions. Three dimensional Shock Boundary layer interaction is observed with following experimental methods: Oil flow visualization(Below), Schlieren, Focusing Schlieren, Side-wall schlieren and pressure measurements.
 										Schlieren snapshots are processed using Proper Orthogonal Decomposition(POD), Dynamic Mode Decomposition(DMD) and Spectral Proper Orthogonal Decomposition(SPOD) to analyze and obtain spatio-temporal dominant flow features and frequencies.
 									</p>
-									<p><b>Guide:</b><a href="https://iitm.irins.org/profile/67239" >Prof.Sriram Rengarajan</a>,IITM</p>
-									<p><b>Current status</b>: Writing a conference paper for "National Shock Wave Symposium", IIT Kanpur,India, Nov 2024<b>(Accepted)</b></p>
-									<video width="640" height="360" controls autoplay loop muted>
-										<source src="images/oil_flow_muted.mp4" type="video/mp4">
+									<p class="special-paragraph"><b>Guide:</b><a href="https://iitm.irins.org/profile/67239" >Prof.Sriram Rengarajan</a>,IITM</p>
+									<p class="special-paragraph"><b>Current status:</b> Setting Side-wall schlieren to visualize shock foot and characterize it </p>
 									
-									</video>
-									<div class="caption"><b> Oil flow visualization at Mach 3.0(video)</b></div>
+
+
+									<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+										<!-- Video Section -->
+										<div>
+											<video width="480" height="320" controls autoplay loop muted>
+												<source src="images/oil_flow_muted.mp4" type="video/mp4">
+												
+											</video>
+											<div class="caption"><b>Oil flow visualization at Mach 3.0 (video)</b></div>
+										</div>
+									
+										<!-- PNG Section -->
+										<div>
+											<img src="images/NSSW_POSTER.png" alt="Oil flow visualization image" width="480" height="320">
+											<div class="caption"><b>NSSW Conference Poster,IIT Kanpur 2024</b></div>
+										</div>
+									</div>
+									
 								</body>
 							</article>
                                 
@@ -93,10 +117,10 @@
 										<img src="images/mp_vs_acc.png" alt="Example" width="300" height="auto">
 									</header>
 									<!-- <a href="#" class="image fit"><img src="images/mp_vs_acc.png" alt="" /></a> -->
-									<p>Translated in-house CFD solver from OpenACC to OpenMP offloading and compared their performance using real test cases. This is done to ensure compatability of our solver across various GPU cards and compilers.
+									<p class="special-paragraph">Translated in-house CFD solver from OpenACC to OpenMP offloading and compared their performance using real test cases. This is done to ensure compatability of our solver across various GPU cards and compilers.
 										Colloborating with CDAC(Centre for development of Advanced Computing) to test our solver with different GPU architectures </p>
-										<p><b>Guide:</b><a href="https://home.iitm.ac.in/nrv/index.html" >Prof.Nagabhushana Rao Vadhlamani</a>,IITM</p>
-										<p><b>Current status:</b> After testing with AMD and intel GPUs, results will be published </p>
+										<p class="special-paragraph"><b>Guide:</b><a href="https://home.iitm.ac.in/nrv/index.html" >Prof.Nagabhushana Rao Vadhlamani</a>,IITM</p>
+										<p class="special-paragraph"><b>Current status:</b> After testing with AMD and intel GPUs, results will be published </p>
 									<!-- <a href="#" class="image fit"><img src="images/mp_acc_result.png" alt="" /></a> -->
 									<div class="image-container">
 							
@@ -114,7 +138,7 @@
 										<h3><a href="#">Avishkar Hyperloop</a></h3>
 									</header>
 									<img src="images/avishkar.jpg" alt="Example" width="300" height="auto">
-									<p>Student-run team researching and developing hyperloop technology. I worked as Thermal Engineer where I researched on <b>Phase Change Materials(PCM)</b> as a viable technique to cool critical electronic components and batteries</p>
+									<p class="special-paragraph">Student-run team researching and developing hyperloop technology. I worked as Thermal Engineer where I researched on <b>Phase Change Materials(PCM)</b> as a viable technique to cool critical electronic components and batteries</p>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
